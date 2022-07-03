@@ -1,8 +1,14 @@
-@import 'base/variebles';
+@import '../base/variables';
 *{
   font-family: 'Musso Sans Cyrl', sans-serif;
 }
 .container {
   max-width: 950px;
   margin: 0 auto;
+  background: red;
+}
+.photo {
+  width: 100px;
+  height: 100px;
+  background: green;
 }
