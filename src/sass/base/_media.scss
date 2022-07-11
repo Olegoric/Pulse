@@ -1,9 +1,10 @@
 @media(max-width: 1060px){
   .carousel{
-    .prev,.next{
-      left: auto;
-      right: auto;
-      visibility: hidden;
+    .prev{
+      left: -6px;
+    }
+    .next {
+      right: -6px;
     }
     .tns-item{
       img{
@@ -31,7 +32,9 @@
 @media(max-width: 767px) {
   .header {
     &__logo {
-      width: 200px;
+      img{
+        width: 200px;
+      }
     }
 
     &__official {
@@ -69,6 +72,19 @@
       width: 300px;
     }
   }
+  .carousel{
+    padding: 5px 0 40px 0;
+  }
+  .catalog{
+    &__tabs{
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    &__tab{
+      margin: 5px 0;
+      width: 300px;
+    }
+  }
 }
 
 @media(max-width: 575px) {
@@ -82,14 +98,20 @@
       height: 50px;
       font-size: 16px;
     }
+    &_mini{
+      width: 131px;
+      height: 40px;
+    }
   }  
   .promo {
     padding: 10px 0 30px 0;
     .header {
       flex-direction: column;
       &__logo {
-        padding: 0 20px;
-        width: 100%;
+        img{
+          padding: 0 20px;
+          width: 100%;
+        }
       }
       &__official {
         margin-top: 25px;
@@ -156,6 +178,21 @@
     }
     .feed-form{
       margin-top: 15px;
+    }
+  }
+  .carousel{
+    .prev, .next {
+      display: none;
+    }
+    .tns-item{
+      img{
+        padding: 0;
+      }
+    }
+  }
+  .catalog{
+    &__tab{
+      width: 250px;
     }
   }
 }
