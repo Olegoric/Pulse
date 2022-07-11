@@ -1,3 +1,18 @@
+@media(max-width: 1060px){
+  .carousel{
+    .prev,.next{
+      left: auto;
+      right: auto;
+      visibility: hidden;
+    }
+    .tns-item{
+      img{
+        padding: 0 50px;
+        width: 100%;
+      }
+    }
+  }
+}
 @media(max-width: 991px) {
   .benefits {
     &__item {
@@ -8,18 +23,6 @@
     .title{
       &_left{
         font-size: 32px;
-      }
-    }
-  }
-  .carousel{
-    .prev,.next{
-      left: auto;
-      right: auto;
-      visibility: hidden;
-    }
-    .tns-item{
-      img{
-        width: 100%;
       }
     }
   }
