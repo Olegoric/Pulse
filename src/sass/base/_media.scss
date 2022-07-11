@@ -11,6 +11,18 @@
       }
     }
   }
+  .carousel{
+    .prev,.next{
+      left: auto;
+      right: auto;
+      visibility: hidden;
+    }
+    .tns-item{
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media(max-width: 767px) {
