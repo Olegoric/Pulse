@@ -85,6 +85,17 @@
       width: 300px;
     }
   }
+  .feed{
+    &__item{
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    &__text, &__subtitle, &__count, &__descr{
+      text-align: center;
+      padding: 0;
+    }
+  }
 }
 
 @media(max-width: 575px) {
