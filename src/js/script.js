@@ -1,5 +1,6 @@
 const slider = tns({
   container: '.carousel__inner',
+  autoHeight: true,
   controls: false,
   items: 1,
   slideBy: 'page',
