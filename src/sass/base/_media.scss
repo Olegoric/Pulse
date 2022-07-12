@@ -97,6 +97,15 @@
       padding: 0;
     }
   }
+  .footer{
+    &__map{
+      padding-top: 270px;
+    }
+    &__info{
+      position: none;
+      width: 100%;
+    }
+  }
 }
 
 @media(max-width: 575px) {
@@ -208,12 +217,13 @@
     }
   }
   .footer{
+    height: 200px;
     &__map{
-      padding-top: 270px;
+      display: none;
     }
     &__info{
-      position: none;
-      width: 100%;
+      height: 200px;
+      padding: 20px 0;
     }
   }
 }
