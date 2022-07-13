@@ -6,5 +6,15 @@
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
-  } 
+  }
+  .error{
+    border: 1px solid red;
+  }
+  label.error{
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color:#fff;
+    border: none;
+    text-align: center;
+  }
 }

@@ -226,4 +226,12 @@
       padding: 20px 0;
     }
   }
+  .modal{
+    padding: 38px 0;
+    width: 315px;
+    &__close{
+      top: 5px;
+      right: 5px;
+    }
+  }
 }
