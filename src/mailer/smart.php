@@ -19,7 +19,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('', 'Pulse');   // От кого письмо 
-$mail->addAddress('oleg.barskiy17@gmail.com');     // Add a recipient
+$mail->addAddress($email);     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -28,12 +28,14 @@ $mail->addAddress('oleg.barskiy17@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Дані';
+$mail->Subject = 'Ваші дані';
 $mail->Body    = '
-		Користувач залишив дані <br> 
+	Ви залишили дані на сайті Pulse <br> 
 	Им`я: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+	E-mail: ' . $email . '<br><br>
+	Дякуємо за вашу заявку! <br>
+	Наш менеджер зв`яжеться з вами найближчим часом!';
 
 if(!$mail->send()) {
     return false;
